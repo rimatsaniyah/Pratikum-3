@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title> Contoh Program JavaScript </title>
+        </head>
+        <script language="JavaScript">
+            function test () 
+            {
+                // untuk memilih nilai antara 1-5
+                val1 = window.prompt("Input Nilai (1-5) : ")
+                switch (val1)
+                {
+                    // Output bila memilih bilangan 1
+                    case "1" :
+                    document.write("bilangan satu")
+                    break
+                    // Output bila memilih bilangan 2
+                    case "2" :
+                    document.write("bilangan dua")
+                    break
+                    // Output bila memilih bilangan 3
+                    case "3" :
+                    document.write("bilangan tiga")
+                    break
+                    // Output bila memilih bilangan 4
+                    case "4" :
+                    document.write("bilangan empat")
+                    break
+                    // Output bila memilih bilangan 5
+                    case "5" :
+                    document.write("bilangan lima")
+                    break
+                    // Output bila memilih bilangan lain
+                    default :
+                    case "1" :
+                    document.write("bilangan lainnya")
+                    break
+                }
+            }
+        </script>
+        <body>
+            <! menampilkan button "switch" pada halaman web>
+            <input type="button" name="button1" value="switch" onclick=test()>
+        </body>
+    </html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Contoh Program JavaScript</title>
+    </head>
+    <script language="Javascript">
+        function test() {
+            // Menentukan variabel1
+            var val1=document.kirim.T1.value
+
+            // Menentukan nilai variabel ganjil/genap dengan modulus
+            if (val1%2 == 0)
+
+            // Output bila variabel bilangan genap
+            document.kirim.T2.value="bilangan genap"
+            
+            // Output bila variabel bilangan ganjil
+            else
+            document.kirim.T2.value="bilangan ganjil"
+        }
+    </script>
+    <body>
+        <! menampilkan form >
+        <form method="POST" name="kirim">
+            
+            <! menampilkan input pada halaman web>
+            <p> BIL : <input type="text" name="T1" size="20"> MERUPAKAN BIL : 
+            <input type="text" name="T2" size="20"> </p>
+            
+            <! menampilkan button "tebak" >
+            <p><input type="button" value="Tebak" name="B1" onclick=test()></p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Kalkulator Sederhanar</title>
+        <style type="text/css">
+         .tombol{
+           background: lightgrey;
+           font-family: Arial;
+           text-align: center;
+         }
+         .tabel{
+           background-color: darkolivegreen;
+           border-collapse: collapse;
+           text-align: center;
+           width: 300px;
+           height: 150px;
+         }
+        </style>
+       </head>
+       <script type="text/javascript">
+           // fungsi button tambah (+) untuk menyimpan penjumlahan angka1 & angka2
+           function tambah(){
+            var angka1=parseFloat(document.calculator.angka1.value);
+            var angka2=parseFloat(document.calculator.angka2.value);
+            var hasil= angka1+angka2;
+            document.calculator.hasil.value=hasil;
+           }
+           // fungsi button kurang (-) untuk menyimpan pengurangan angka1 & angka2
+           function kurang(){
+            var angka1=parseFloat(document.calculator.angka1.value);
+            var angka2=parseFloat(document.calculator.angka2.value);
+            var hasil= angka1-angka2;
+            document.calculator.hasil.value=hasil;
+           }
+           // fungsi button kali (x) untuk menyimpan perkalian angka1 & angka2
+           function kali(){
+            var angka1=parseFloat(document.calculator.angka1.value);
+            var angka2=parseFloat(document.calculator.angka2.value);
+            var hasil= angka1*angka2;
+            document.calculator.hasil.value=hasil;
+           }
+           // fungsi button bagi (:) untuk menyimpan pembagian angka1 & angka2
+           function bagi(){
+            var angka1=parseFloat(document.calculator.angka1.value);
+            var angka2=parseFloat(document.calculator.angka2.value);
+            var hasil= angka1/angka2;
+            document.calculator.hasil.value=hasil;
+           }
+           </script>
+       <body>
+         <center>
+          <form name="calculator">
+          
+          <table style="background-color: " class="tabel">
+            <h3>Kalkulator Mini</h3>
+            <tr>
+            <td>Angka 1</td><td>:</td><td><input type="number" name="angka1"></td>
+            </tr>
+            <tr>
+            <td>Angka 2</td><td>:</td><td><input type="number" name="angka2"></td>
+            </tr>
+            <tr>
+            <td>Hasil</td><td>:</td><td><input type="number" name="hasil"></td>
+            </tr>
+            <tr>
+            <td colspan="3" align="center">
+              <input class="tombol" type="button" onclick="tambah()" value="  +  ">
+              <input class="tombol" type="button" onclick="kurang()" value="  -  ">
+              <input class="tombol" type="button" onclick="kali()" value="  *  ">
+              <input class="tombol" type="button" onclick="bagi()" value="  /  ">
+              <input class="tombol" type="reset" onclick="" value="  Reset  ">
+            </td>
+            </tr>
+          </table>
+          </form>
+       </center>
+       </body>
+</html>
